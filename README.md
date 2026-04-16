@@ -85,16 +85,28 @@ jupyter notebook notebooks/Trader_Performance_vs_Market_Sentiment.ipynb
 
 ## 📊 Key Insights
 
-- The strategy demonstrates a strong **“Fear alpha”**, performing significantly better during Fear periods, with higher win rates, improved average PnL, and more controlled drawdowns.
+### 🔹 1. PnL Behavior and Volatility
+- 'Fear' periods exhibit higher variability in PnL, with lower median returns but higher average PnL driven by extreme positive outliers, indicating a high-risk, high-reward environment.
+- In contrast, 'Greed' periods show more stable and consistent returns, with higher median PnL and lower dispersion.
+- The maximum daily PnL is significantly higher during 'Fear', reinforcing the presence of occasional large gains.
 
-- Win rate drops sharply during Greed periods (below 30%), indicating that the strategy struggles in trending or low-volatility market conditions.
+### 🔹 2. Trading Activity Patterns
+- Trading activity is higher during 'Fear' periods, with an increased average number of trades per day, suggesting that traders react more actively to volatile market conditions.
+- During 'Greed' periods, trade frequency decreases, indicating a tendency to hold positions longer in more stable environments.
+- Higher trade frequency is positively associated with improved PnL, suggesting that active participation may enhance profitability in volatile regimes.
 
-- Trading activity increases during Fear periods, suggesting that the strategy is more effective in volatile and uncertain market environments.
+### 🔹 3. Trade Size and Profitability
+- Position size (trade size in USD) shows little to no correlation with PnL, indicating that larger trades do not necessarily result in higher profits.
+- Trade size and trade frequency appear largely independent, suggesting that traders are not simultaneously increasing both exposure and activity.
 
-- Drawdowns during Greed periods are more severe, with extreme loss events capable of offsetting multiple profitable trades, highlighting higher downside risk.
+### 🔹 4. Market Sentiment Distribution
+- 'Greed' sentiment dominates the dataset, accounting for approximately 59% of observations, while 'Fear' represents around 41%, indicating that favorable market conditions are more frequent.
 
-- The near-balanced long/short distribution indicates that performance is **not driven by market direction**, but rather by sensitivity to sentiment regimes.
----
+### 🔹 5. Trade Direction Neutrality
+- The distribution of BUY (long) and SELL (short) trades is nearly balanced (~50/50), suggesting that overall performance is not driven by directional market bias.
+
+### 🔹 6. Drawdown Characteristics
+- Although average drawdowns are similar across sentiments, 'Fear' periods exhibit deeper and more frequent drawdowns, indicating higher downside risk and less stable performance.
 
 ##  Strategy Recommendations
 
