@@ -122,22 +122,8 @@ Position sizes should be adjusted based on trader consistency. Consistent trader
 
 - Visualizations comparing Fear vs Greed performance
 - Behavioral analysis of trading patterns
-- Segment-based insights
 
 ---
 
-##  Project Structure
 
-```
-trader-sentiment-analysis/
-│
-├── data/
-│   ├── fear_greed_index.csv
-│   └── historical_data.csv
-├── notebooks/
-│   └── Trader_Performance_vs_Market_Sentiment.ipynb
-├── outputs/
-│   ├── charts/
-│   └── tables/
-└── README.md
 ```
