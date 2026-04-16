@@ -83,24 +83,17 @@ jupyter notebook notebooks/Trader_Performance_vs_Market_Sentiment.ipynb
 
 ---
 
-## Key Insights
+## 📊 Key Insights
 
-### 🔹 1. Performance Patterns
-- Traders achieve higher average profitability during Greed periods
-- However, Greed periods also show increased variability, indicating higher volatility in outcomes
+- The strategy demonstrates a strong **“Fear alpha”**, performing significantly better during Fear periods, with higher win rates, improved average PnL, and more controlled drawdowns.
 
-### 🔹 2. Behavioral Changes
-- Trading activity increases significantly during Greed, reflecting higher market confidence
-- During Fear periods, traders become more cautious, leading to reduced trade frequency
+- Win rate drops sharply during Greed periods (below 30%), indicating that the strategy struggles in trending or low-volatility market conditions.
 
-### 🔹 3. Risk & Consistency
-- Performance during Fear periods is less stable, with greater fluctuations in PnL
-- Volatile traders experience larger losses during Fear, while consistent traders maintain relatively stable outcomes
+- Trading activity increases during Fear periods, suggesting that the strategy is more effective in volatile and uncertain market environments.
 
-### 🔹 4. Market Sentiment Impact
-- Market sentiment has a clear influence on both trader behavior and performance
-- Greed encourages aggressive participation, while Fear leads to conservative decision-making
+- Drawdowns during Greed periods are more severe, with extreme loss events capable of offsetting multiple profitable trades, highlighting higher downside risk.
 
+- The near-balanced long/short distribution indicates that performance is **not driven by market direction**, but rather by sensitivity to sentiment regimes.
 ---
 
 ##  Strategy Recommendations
